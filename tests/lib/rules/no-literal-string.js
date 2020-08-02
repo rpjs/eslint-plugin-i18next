@@ -125,6 +125,7 @@ ruleTester.run('no-literal-string', rule, {
   ],
 
   invalid: [
+    { code: 'var a = `hello world`', errors },
     { code: 'i18nextXt("taa");', errors },
     { code: 'a + "b"', errors },
     {
